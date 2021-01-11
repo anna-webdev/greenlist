@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Mogan';
+    src: url('Mogan-Regular.eot');
+    src: local('Mogan Regular'), local('Mogan-Regular'),
+        url('Mogan-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Mogan-Regular.woff2') format('woff2'),
+        url('Mogan-Regular.woff') format('woff'),
+        url('Mogan-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+

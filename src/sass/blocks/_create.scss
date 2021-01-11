@@ -1,0 +1,25 @@
+.create {
+    padding-top: 180px;
+    min-height: 970px;
+    background: #FFE6E2;
+    &__title {
+        text-align: center;
+        width: 717px;
+        margin: 0 auto;
+    }
+    &__descr {
+        width: 578px;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 18px;
+        line-height: 27px;
+        margin-top: 40px;
+    }
+    &__photo {
+        width: 810px;
+        margin: 85px auto 0px auto;
+        img {
+            width: 100%;
+        }
+    }
+}

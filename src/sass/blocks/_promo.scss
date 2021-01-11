@@ -1,0 +1,29 @@
+.promo {
+    padding-top: 130px;
+    background: $main-color;
+    min-height: 870px;
+    &__info {
+        width: 638px;
+    }
+    &__title {
+        line-height: 105px;
+        span {
+            font-family: 'Mogan';
+            color: #F09C96;
+        }
+    }
+    &__descr {
+        margin-top: 29px;
+        font-size: 12px;
+        color: #fff;
+    }
+    &__photo {
+        width: 534px;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        img {
+            width: 100%;
+        }
+    }
+}

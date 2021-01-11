@@ -1,0 +1,16 @@
+.title {
+    font-family: 'Mogan';
+    font-size: 54px;
+    line-height: 72px;
+    color: #000;
+    &_fz60 {
+        font-size: 60px;
+    }
+    &_fz64 {
+        font-size: 64px;
+    }
+    &_fz110 {
+        font-size: 110px;
+        color: #fff;
+    }
+}

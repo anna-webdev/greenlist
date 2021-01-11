@@ -1,0 +1,25 @@
+@import 'libs/bootstrap-reboot.min';
+@import 'base/fonts';
+
+@import 'base/variables';
+@import 'base/mixins';
+@import 'base/titles';
+@import 'base/buttons';
+@import 'blocks/header';
+@import 'blocks/promo';
+@import 'blocks/challenge';
+@import 'blocks/create';
+
+
+
+* {
+    font-family: 'Roboto';
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+    position: relative;
+}

@@ -1,0 +1,30 @@
+.challenge {
+    padding-top: 120px;
+    min-height: 1090px;
+    &__title {
+        width: 605px;
+        line-height: 80px;
+    }
+    &__descr {
+        margin-top: 33px;
+        width: 460px;
+        font-size: 18px;
+    }
+    &__girl {
+        width: 391px;
+        position: absolute;
+        top: 210px;
+        right: 0;
+        img {
+            width: 100%;
+        }
+    }
+    &__man {
+        width: 557px;
+        position: absolute;
+        top: 658px;
+        img {
+            width: 100%;
+        }
+    }
+}
