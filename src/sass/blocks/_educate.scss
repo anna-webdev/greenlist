@@ -1,0 +1,19 @@
+.educate {
+    padding-top: 250px;
+    min-height: 1470px;
+    &__wrapper {
+        display: grid;
+        grid-template: repeat(3, minmax(407px, auto)) / repeat(2, 562px);
+        grid-auto-rows: minmax(407px, auto);
+        justify-items: center;
+    }
+    &__title {
+        width: 355px;
+    }
+    &__descr {
+        width: 384px;
+        font-size: 18px;
+        margin-top: 16px;
+        line-height: 27px;
+    }
+}

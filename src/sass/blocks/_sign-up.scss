@@ -1,0 +1,22 @@
+    .sign-up {
+        padding-top: 125px;
+        min-height: 590px;
+        background: $main-color;
+        &__title {
+            width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            line-height: 105px;
+            span {
+                color: #F09C96;
+                font-family: 'Mogan';
+            }
+        }
+        &__descr {
+            color: #fff;
+            font-size: 12px;
+            font-weight: 400px;
+            margin-top: 13px;
+            text-align: center;
+        }
+    }

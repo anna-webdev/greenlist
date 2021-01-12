@@ -1,0 +1,13 @@
+.footer {
+    padding-top: 32px;
+    min-height: 88px;
+    background: $main-color;
+    &__links {
+        text-align: center;
+        color:#fff;
+        font-size: 16px;
+        a {
+            color: #fff;
+        }
+    }
+}
