@@ -2,6 +2,7 @@
     .container {
         max-width: 950px;
     }
+    
     .promo {
         min-height: 820px;
         &__info {
@@ -13,6 +14,75 @@
         }
         &__photo {
             width: 480px;
+        }
+    }
+    
+    .challenge {
+        padding-top: 80px;
+        min-height: 920px;
+        &__info {
+            margin-left: 30px;
+        }
+        &__title {
+            width: 550px;
+            line-height: 60px;
+            font-size: 56px;
+        }
+        &__girl {
+            width: 350px;
+            top: 160px;
+            right: 20px;
+        }
+        &__man {
+            width: 510px;
+            top: 560px;
+            left: 30px;
+        }
+    }
+
+    .create {
+        padding-top: 130px;
+        min-height: 920px;
+    }
+
+    .educate {
+        padding-top: 140px;
+        min-height: 1270px;
+        &__wrapper {
+            grid-template: repeat(3, minmax(370px, auto)) / repeat(2, 475px);
+            grid-auto-rows: minmax(370px, auto);
+        }
+        &__item {
+            &:nth-child(2) {
+                img {
+                    width: 475px;
+                }
+            }
+            &:nth-child(3) {
+                img {
+                    width: 475px;
+                }
+            }
+            &:nth-child(6) {
+                img {
+                    width: 475px;
+                }
+            }
+        }
+    }
+
+    .sign-up {
+        padding-top: 90px;
+        min-height: 490px;
+        &__title {
+            font-size: 90px;
+            width: 655px;
+        }
+    }
+
+    .footer {
+        &__links {
+            font-size: 14px;
         }
     }
 }
@@ -35,6 +105,90 @@
             width: 350px;
             top: 250px;
             right: 30px;
+        }
+    }
+
+    .challenge {
+        padding-top: 60px;
+        min-height: 750px;
+        &__title {
+            width: 490px;
+            line-height: 50px;
+            font-size: 48px;
+        }
+        &__descr {
+            font-size: 16px;
+            width: 400px;
+        }
+        &__girl {
+            width: 250px;
+            top: 190px;
+        }
+        &__man {
+            width: 380px;
+            top: 480px;
+        }
+    }
+
+    .create {
+        padding-top: 80px;
+        min-height: 698px;
+        &__title {
+            font-size: 48px;
+            width: 500px;
+        }
+        &__descr {
+            font-size: 16px;
+            margin-top: 20px;
+        }
+        &__photo {
+            margin-top: 40px;
+            width: 600px;
+        }
+    }
+
+    .educate {
+        padding-top: 100px;
+        min-height: 975px;
+        &__wrapper {
+            grid-template: repeat(3, minmax(280px, auto)) / repeat(2, 360px);
+            grid-auto-rows: minmax(280px, auto);
+        }
+        &__title {
+            font-size: 38px;
+            line-height: 45px;
+            width: 100%;
+        }
+        &__descr {
+            font-size: 16px;
+            width: 100%;
+        }
+        &__item {
+            &:nth-child(2) {
+                img {
+                    width: 360px;
+                }
+            }
+            &:nth-child(3) {
+                img {
+                    width: 360px;
+                }
+            }
+            &:nth-child(6) {
+                img {
+                    width: 360px;
+                }
+            }
+        }
+    }
+
+    .sign-up {
+        padding-top: 60px;
+        min-height: 410px;
+        &__title {
+            font-size: 70px;
+            width: 510px;
+            line-height: 85px;
         }
     }
 }
@@ -77,6 +231,72 @@
             transform: translateX(50%);
         }
     }
+
+    .challenge {
+        min-height: 735px;
+        &__title {
+            font-size: 38px;
+        }
+        &__descr {
+            margin-top: 25px;
+        }
+        &__girl {
+            top: 370px;
+            right: 50%;
+            transform: translateX(50%);
+        }
+        &__man {
+            display: none;
+        }
+    }
+
+    .create {
+        padding-top: 75px;
+        min-height: 620px;
+        &__title {
+            font-size: 38px;
+            width: 395px;
+            line-height: 50px;
+        }
+        &__descr {
+            width: 460px;
+        }
+        &__photo {
+            margin-top: 30px;
+            width: 510px;
+        }
+    }
+
+    .educate {
+        padding-top: 80px;
+        min-height: 1380px;
+        &__wrapper {
+            grid-template: repeat(6, minmax(150px, auto)) / 470px;
+            grid-auto-rows: minmax(150px, auto);
+            row-gap: 15px;
+        }
+        &__item {
+            &:nth-child(3) {
+                grid-row: 4 / 5;
+            }
+            &:nth-child(4) {
+                grid-row: 3 / 4;
+            }
+        }
+    }
+
+    .sign-up {
+        min-height: 370px;
+        &__title {
+            font-size: 54px;
+            width: 395px;
+            line-height: 65px;
+        }
+    }
+
+    .footer {
+        min-height: 75px;
+    }
 }
 
 @media (max-width: 576px) {
@@ -99,7 +319,7 @@
             background-color: #F09C96;
             z-index: 1;
             flex-direction: column;
-            justify-content: space-around;
+            justify-content: center;
             align-items: center;
             transition: 0.7s all;
             &_active {
@@ -108,6 +328,7 @@
         }
         &__item {
             margin-left: 0;
+            margin-bottom: 15px;
             a {
                 font-size: 16px;
             }
@@ -116,6 +337,7 @@
         &__hamburger {
             display: block;
             position: fixed;
+            z-index: 1;
             top: 20px;
             right: 15px;
             width: 22px;
@@ -125,7 +347,7 @@
                 display: block;
                 height: 1px;
                 margin-bottom: 3px;
-                background-color: #fff;
+                background-color: #F09C96;
                 transition: 0.6s all;
             }
             &_active {
@@ -157,6 +379,87 @@
         &__photo {
             width: 280px;
             top: 375px;
+        }
+    }
+
+    .challenge {
+        padding-top: 30px;
+        &__info {
+            margin: 0 auto;
+        }
+        &__title {
+            font-size: 30px;
+            width: 100%;
+            line-height: 40px;
+        }
+        &__descr {
+            font-size: 13px;
+            width: 100%;
+            margin-top: 15px;
+        }
+        &__girl {
+            top: 390px;
+        }
+    }
+
+    .create {
+        padding-top: 55px;
+        min-height: 450px;
+        &__title {
+            font-size: 30px;
+            width: 100%;
+            line-height: 40px;
+        }
+        &__descr {
+            margin-top: 15px;
+            font-size: 13px;
+            width: 100%;
+        }
+        &__photo {
+            margin-top: 20px;
+            width: 100%;
+        }
+    }
+
+    .educate {
+        padding-top: 40px;
+        min-height: 1240px;
+        &__wrapper {
+            grid-template: repeat(6, minmax(150px, auto)) / 100%;
+            grid-auto-rows: minmax(150px, auto);
+            row-gap: 15px;
+        }
+        &__item {
+            &:nth-child(2) {
+                img {
+                    width: 100%;
+                }
+            }
+            &:nth-child(3) {
+                img {
+                    width: 100%;
+                }
+            }
+            &:nth-child(6) {
+                img {
+                    width: 100%;
+                }
+            }
+        }
+        &__title {
+            font-size: 30px;
+        }
+        &__descr {
+            font-size: 13px;
+        }
+    }
+
+    .sign-up {
+        min-height: 320px;
+        &__title {
+            font-size: 38px;
+            width: 280px;
+            line-height: 50px;
         }
     }
 }

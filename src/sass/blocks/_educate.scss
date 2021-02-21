@@ -6,6 +6,7 @@
         grid-template: repeat(3, minmax(407px, auto)) / repeat(2, 562px);
         grid-auto-rows: minmax(407px, auto);
         justify-items: center;
+        justify-content: center;
     }
     &__title {
         width: 355px;
