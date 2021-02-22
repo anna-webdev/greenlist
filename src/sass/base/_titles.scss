@@ -1,8 +1,13 @@
 .title {
-    font-family: 'Mogan';
+    font-family: 'Cormorant';
     font-size: 53px;
     line-height: 72px;
     color: #000;
+    &_fz28 {
+        font-size: 28px;
+        line-height: 26px;
+        color: $main-color
+    }
     &_fz60 {
         font-size: 60px;
     }

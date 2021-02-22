@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie-edge">
     <title>GreenList</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -13,9 +15,11 @@
                 <img src="icons/Logo.png" alt="logo">
             </div>
             <nav class="header__menu">
-                <div class="header__item"><a href="#">Home</a></div>
-                <div class="header__item"><a href="#">Pricing</a></div>
-                <div class="header__item"><a href="#">Support</a></div>
+                <ul class="header__list">
+                    <li class="header__item"><a href="#">Home</a></li>
+                    <li class="header__item"><a href="#">Pricing</a></li>
+                    <li class="header__item"><a href="#">Support</a></li>
+                </ul>
             </nav>
             <div class="header__hamburger">
                 <span></span>
@@ -27,9 +31,9 @@
     <section class="promo">
         <div class="container">
             <div class="promo__info">
-                <div class="promo__title title title_fz110">
+                <h1 class="promo__title title title_fz110">
                     Green Revolution? It`s a <span>team</span> effort.
-                </div>
+                </h1>
                 <button class="connect-btn">
                     <div class="connect-btn__icon"><img src="icons/Button_icon.svg" alt="button_icon"></div>
                     <div class="connect-btn__text">Connect to Slack</div>
@@ -45,9 +49,9 @@
     <section class="challenge">
         <div class="container">
             <div class="challenge__info">
-                <div class="challenge__title title title_fz64">
+                <h2 class="challenge__title title title_fz64">
                     Challenge your team to make small, sustainable choices at work.
-                </div>
+                </h2>
                 <div class="challenge__descr">
                     Greenlist is a simple internal tool that empowers companies to start a sustainable office lifestyle while driving change in a way that feels natural. With both a fun and inspiring approach, Greenlist turns cutting down on plastic into a friendly in-company competition that celebrates individuals for their efforts.
                 </div>
@@ -59,9 +63,9 @@
 
     <section class="create">
         <div class="container">
-            <div class="create__title title title_fz60">
+            <h2 class="create__title title title_fz60">
                 Create a cleaner and better world, on Slack.
-            </div>
+            </h2>
             <div class="create__descr">
                 Whether it’s choosing reusable food and liquid containers or picking the vegetarian option for the office lunch, Greenlist allows anyone in your team to set a positive role model and influence other staff in being more cautious about plastic pollution and using resources sustainably.
             </div>
@@ -73,7 +77,7 @@
         <div class="container">
             <div class="educate__wrapper">
                 <div class="educate__item">
-                    <div class="educate__title title">Educate employees</div>
+                    <h3 class="educate__title title">Educate employees</h3>
                     <div class="educate__descr">
                         Thanks to a point system based on the environmental impact of each action, 
                         Greenlist helps you educate your employees on sustainability while keeping them engaged.
@@ -86,7 +90,7 @@
                     <img src="img/celebrate_img.png" alt="celebrate">
                 </div>
                 <div class="educate__item">
-                    <div class="educate__title title">Celebrate achievements</div>
+                    <h3 class="educate__title title">Celebrate achievements</h3>
                     <div class="educate__descr">
                         Greenlist celebrates your employee’s waste reduction achievements 
                         by giving custom designed badges so that they feel proud of the 
@@ -94,7 +98,7 @@
                     </div>
                 </div>
                 <div class="educate__item">
-                    <div class="educate__title title">Drive engagement</div>
+                    <h3 class="educate__title title">Drive engagement</h3>
                     <div class="educate__descr">
                         Discover week by week how well your team is doing 
                         and which employee will get to the top of the
@@ -110,9 +114,9 @@
 
     <section class="sign-up">
         <div class="container">
-            <div class="sign-up__title title title_fz110">
+            <h2 class="sign-up__title title title_fz110">
                 Sign up to <span>Greenlist</span> today.
-            </div>
+            </h2>
             <button class="connect-btn connect-btn_down">
                 <div class="connect-btn__icon"><img src="icons/Button_icon.svg" alt="button_icon"></div>
                 <div class="connect-btn__text">Connect to Slack</div>
@@ -128,6 +132,40 @@
             <a href="#">Terms</a>
         </div>
     </footer>
+
+    <div class="modal"></div>
+    
+    <div class="windows">
+        <div class="windows__window">
+            <div class="windows__close">
+                <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13 1.1375L11.8625 0L6.5 5.3625L1.1375 0L0 1.1375L5.3625 6.5L0 11.8625L1.1375 13L6.5 7.6375L11.8625 13L13 11.8625L7.6375 6.5L13 1.1375Z" fill="#C25850"/>
+                    </svg>
+            </div>
+            <div class="windows__title title title_fz28">Please, fill the form</div>
+            <form action="#" id="modalform" class="windows__form">
+               <input required name="name" id="name" placeholder="Your name" type="text">
+    
+               <input required name="email" id="mail" placeholder="Your email" type="email">
+             
+               <input required name="phone" id="phone" placeholder="Your phone number" type="tel">
+               
+               <button class="windows__btn">Submit</button>
+            </form>
+        </div>
+    
+    </div>
+
+    <div class="thankyou">
+        <div class="thankyou__thanks">
+            <div class="thankyou__close">
+                <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13 1.1375L11.8625 0L6.5 5.3625L1.1375 0L0 1.1375L5.3625 6.5L0 11.8625L1.1375 13L6.5 7.6375L11.8625 13L13 11.8625L7.6375 6.5L13 1.1375Z" fill="#C25850"/>
+                    </svg>
+            </div>
+            <div class="thankyou__title title title_fz28">Thank you!</div>
+        </div>
+    </div>
 
     <script src="js/script.js"></script>
 </body>

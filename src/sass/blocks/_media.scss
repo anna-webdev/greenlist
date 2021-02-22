@@ -309,18 +309,21 @@
         &__logo {
             width: 100px;
         }
+        &__list {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 80px 15px;
+            height: 100%;
+        }
         &__menu {
             position: fixed;
             top: 0;
             left: -100%;
-            padding: 80px 15px;
             width: 60%;
             height: 100vh;
             background-color: #F09C96;
             z-index: 1;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
             transition: 0.7s all;
             &_active {
                 left: 0;
